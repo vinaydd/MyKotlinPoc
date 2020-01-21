@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="msg_no_internet">No internet connection.</string>
+    <string name="msg_app_exit">Are you sure you would like to close App?</string>
+    <string name="msg_something_went_wrong">Something went wrong</string>
+    <string name="msg_app_update">A New version of app is available.</string>
+    <string name="msg_forgot_password">Enter the email address of your account and we will send you an email with
+        instructions to reset your
+        password
+    </string>
+
+    <string name="button_enable">Enable</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_no">No</string>
+    <string name="button_exit">Exit</string>
+    <string name="na">N/A</string>
+</resources>

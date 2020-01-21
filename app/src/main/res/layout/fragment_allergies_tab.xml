@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModelallergies"
+            type="com.wipro.pocapp.ui.home.PocViewModel" />
+    </data>
+          <RelativeLayout
+            android:id="@+id/allergies_ItemRealtiveLayout"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+
+              <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                  android:id="@+id/swip"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+
+
+                  <androidx.recyclerview.widget.RecyclerView
+                      android:id="@+id/allergies_tab_recyclerview"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+
+                      android:background="@android:color/white"
+                      android:padding="10dp"
+                      tools:listitem="@layout/adapter_allergies_lists" />
+
+
+              </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+              <ProgressBar
+                  android:id="@+id/progressBar"
+                  android:layout_width="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:backgroundTint="@color/colorPrimary"
+                  />
+
+        </RelativeLayout>
+
+
+
+</layout>
