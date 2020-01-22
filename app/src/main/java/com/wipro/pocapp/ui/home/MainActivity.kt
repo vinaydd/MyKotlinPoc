@@ -1,9 +1,8 @@
 package com.wipro.pocapp.ui.home
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
-import com.doctoremr.data.network.NetworkConnectionInterceptor
 import com.doctoremr.data.preferences.PreferenceProvider
 import com.wipro.pocapp.R
 import com.wipro.pocapp.exception.NoInternetException
